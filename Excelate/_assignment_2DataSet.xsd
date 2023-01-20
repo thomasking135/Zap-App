@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="_assignment_2DataSet" targetNamespace="http://tempuri.org/_assignment_2DataSet.xsd" xmlns:mstns="http://tempuri.org/_assignment_2DataSet.xsd" xmlns="http://tempuri.org/_assignment_2DataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="assignment_2ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="assignment_2ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Excelate.Properties.Settings.GlobalReference.Default.assignment_2ConnectionString" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="activityTableAdapter" GeneratorDataComponentClassName="activityTableAdapter" Name="activity" UserDataComponentName="activityTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="assignment_2ConnectionString (Settings)" DbObjectName="`assignment-2`.activity" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `activity_id`, `activity_name`, `activity_type`, `risk`, `risk_preparation`, `risk_reduction`, `risk_level_id` FROM `activity`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="_assignment_2DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="_assignment_2DataSet" msprop:Generator_UserDSName="_assignment_2DataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="activity" msprop:Generator_TableClassName="activityDataTable" msprop:Generator_TableVarName="tableactivity" msprop:Generator_TablePropName="activity" msprop:Generator_RowDeletingName="activityRowDeleting" msprop:Generator_RowChangingName="activityRowChanging" msprop:Generator_RowEvHandlerName="activityRowChangeEventHandler" msprop:Generator_RowDeletedName="activityRowDeleted" msprop:Generator_UserTableName="activity" msprop:Generator_RowChangedName="activityRowChanged" msprop:Generator_RowEvArgName="activityRowChangeEvent" msprop:Generator_RowClassName="activityRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
